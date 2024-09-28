@@ -6,6 +6,8 @@ int maxSubArraySum(int ar[], int n) {
   for(int i = 0; i < n; i++) {
     maxNow = maxNow+ar[i];
     if(maxTillNow < maxNow) maxTillNow = maxNow;
+
+    //to intiate again max to 0 for subarray
     if(maxNow < 0) maxNow = 0;
   }
   return maxTillNow;

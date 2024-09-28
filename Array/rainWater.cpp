@@ -47,7 +47,7 @@ int optimized(vector<int> ar) {
   int maxLeft = 0, maxRight = 0;
   for(int i = 0; i < ar.size(); i++) { 
     maxLeft = max(maxLeft, ar[i]);
-    leftMax[i] = max(maxLeft, ar[i]);
+    leftMax[i] = maxLeft;
   }
   for(int i = ar.size()-1; i > 0; i--) {
     maxRight = max(maxRight, ar[i]);
