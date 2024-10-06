@@ -25,8 +25,7 @@ bool identicalTrees(Node *a, Node *b) {
 	return false;
 }
 
-int main()
-{
+int main() {
     Node* root1 = newNode(1);
     Node* root2 = newNode(1);
     root1->left = newNode(1);
