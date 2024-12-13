@@ -51,7 +51,6 @@ class InorderSuccessorBST {
 	    root = Node.insert(root, 10);
 	    root = Node.insert(root, 14);
 	    System.out.println(temp.val + ": "+ inorderSuccessorBSTImp(root, temp).val);
-
 	}
 
 }
